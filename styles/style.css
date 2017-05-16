@@ -1,3 +1,14 @@
 * {
     box-sizing: border-box;
 }
+
+@font-face {
+    font-family: RockSansBold;
+    src: url(../font/RockSans/Rock_Sans_Bold.otf);
+}
+
+@font-face {
+    font-family: RockSansNormal;
+    src: url(../font/RockSans/Rock_Sans_Normal.otf);
+}
+
