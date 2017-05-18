@@ -2,6 +2,9 @@
     box-sizing: border-box;
 }
 
+
+$link: #00b5f7;
+
 @font-face {
   font-family: "RockSans Bold";
   src: url(../font/RockSans/Rock_Sans_Bold.otf) format("truetype");
@@ -59,10 +62,24 @@
                 text-decoration: none;
                 color: #7f7f7f;
             }
+            &__link:active {
+                color: $link;
+            }
+            &__link:hover {
+                color: $link;
+            }
         }
 
         .progress-bar {
             border-bottom: 4px solid purple;
         }
     }
+}
+
+
+// ###################
+// helpers
+
+.active {
+    color: #00b5f7;
 }

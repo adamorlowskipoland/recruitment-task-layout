@@ -43,7 +43,14 @@
       .container .header .menu__link {
         text-decoration: none;
         color: #7f7f7f; }
+      .container .header .menu__link:active {
+        color: #00b5f7; }
+      .container .header .menu__link:hover {
+        color: #00b5f7; }
     .container .header .progress-bar {
       border-bottom: 4px solid purple; }
+
+.active {
+  color: #00b5f7; }
 
 /*# sourceMappingURL=style.css.map */
