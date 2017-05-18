@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "RockSans Bold";
+  src: url(../font/RockSans/Rock_Sans_Bold.otf) format("truetype");
+}
+
+@font-face {
+  font-family: "RockSans";
+  src: url(../font/RockSans/Rock_Sans_Normal.otf) format("truetype");
+}
+
+.container {
+    font-family: "RockSans";
+    text-align: center;
+    border: 1px solid black;
+    height: 1200px;     // remove this line
+    background: lightgrey;
+    position: relative;
+    
+    .header {
+        border: 1px solid blue;
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        text-transform: uppercase;
+        font-size: 12px;
+        // padding: 15px;
+        
+        .side-elem {
+            flex: 1;
+            border: 1px solid orange;
+            color: #7f7f7f;
+
+            .login__link {
+                text-decoration: none;
+                color: #7f7f7f;
+            }
+        }
+
+        .menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            border: 1px solid red;
+            flex: 2;
+                padding: 15px;
+
+            &__elem {
+                display: inline;
+                padding: 15px;
+            }
+
+            &__link {
+                text-decoration: none;
+                color: #7f7f7f;
+            }
+        }
+
+        .progress-bar {
+            border-bottom: 4px solid purple;
+        }
+    }
+}
