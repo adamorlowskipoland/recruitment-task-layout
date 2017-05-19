@@ -10,14 +10,17 @@
 .container {
   font-family: "RockSans";
   text-align: center;
-  border: 1px solid black;
+  width: 1200px;
+  margin: 0 auto;
   height: 1200px;
-  background: lightgrey;
-  position: relative; }
+  position: relative;
+  padding-top: 83px; }
   .container .header {
-    border: 1px solid blue;
+    font-family: "RockSans Bold";
     display: flex;
     position: fixed;
+    max-width: 1200px;
+    margin: 0 auto;
     top: 0;
     left: 0;
     right: 0;
@@ -25,21 +28,23 @@
     font-size: 12px; }
     .container .header .side-elem {
       flex: 1;
-      border: 1px solid orange;
-      color: #7f7f7f; }
+      color: #7f7f7f;
+      padding: 35px 0; }
       .container .header .side-elem .login__link {
         text-decoration: none;
         color: #7f7f7f; }
+    .container .header .side-elem:first-child {
+      border-right: 1px solid lightgray; }
     .container .header .menu {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      border: 1px solid red;
       flex: 2;
-      padding: 15px; }
+      padding: 35px 0; }
       .container .header .menu__elem {
         display: inline;
-        padding: 15px; }
+        padding: 35px 15px;
+        border-right: 1px solid lightgray; }
       .container .header .menu__link {
         text-decoration: none;
         color: #7f7f7f; }
@@ -47,8 +52,12 @@
         color: #00b5f7; }
       .container .header .menu__link:hover {
         color: #00b5f7; }
-    .container .header .progress-bar {
-      border-bottom: 4px solid purple; }
+  .container .progress-bar {
+    width: .1%;
+    transition: 1s;
+    border-bottom: 4px solid purple; }
+  .container .progress-bar:hover {
+    width: 100%; }
 
 .active {
   color: #00b5f7; }
