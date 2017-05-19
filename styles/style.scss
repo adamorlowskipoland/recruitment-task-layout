@@ -27,6 +27,7 @@ $link: #00b5f7;
     .header {
         font-family: "RockSans Bold";
         display: flex;
+        flex-wrap: wrap;
         position: fixed;
         max-width: 1200px;
         margin: 0 auto;
@@ -40,8 +41,14 @@ $link: #00b5f7;
             flex: 1;
             color: #7f7f7f;
             padding: 35px 0;
+        }
 
-            .login__link {
+        .login {
+            background: #5e2cba;
+            color: white;
+
+
+            &__link {
                 text-decoration: none;
                 color: #7f7f7f;
             }
@@ -55,16 +62,19 @@ $link: #00b5f7;
             list-style-type: none;
             margin: 0;
             padding: 0;
-            flex: 2;
-            padding: 35px 0;
+            flex: 3;
+            display: flex;
+            // padding: 35px 0;
 
             &__elem {
+                flex: auto;
                 display: inline;
-                padding: 35px 15px;
+                padding: 35px 0;
                 border-right: 1px solid lightgray;
             }
 
             &__link {
+                margin: 0;
                 text-decoration: none;
                 color: #7f7f7f;
             }
