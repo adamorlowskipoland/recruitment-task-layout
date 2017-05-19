@@ -33,10 +33,10 @@
       padding: 35px 0; }
     .container .header .login {
       background: #5e2cba;
-      color: white; }
+      color: #ffffff; }
       .container .header .login__link {
         text-decoration: none;
-        color: #7f7f7f; }
+        color: #ffffff; }
     .container .header .side-elem:first-child {
       border-right: 1px solid lightgray; }
     .container .header .menu {
